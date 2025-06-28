@@ -117,6 +117,17 @@
       color: #05610b;
       font-weight: bold;
     } */
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+/* 
+    .button-group a.btn {
+      flex: 1 1 100%;
+      text-align: center;
+    } */
 
     .about h2 {
       font-size: 2rem;
@@ -161,11 +172,18 @@
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
-        text-align: center;
+        /* text-align: center; */
       }
       .hero-image {
         padding: 0;
         margin-top: 2rem;
+      }
+      .text-content {
+        /* text-align: center; */
+        padding: 1rem;
+      }
+      .btn {
+        width: 100%;
       }
     }
   </style>
@@ -174,16 +192,18 @@
 
   <section class="container">
     <div class="text-content">
-    <h1>KORT MEN GODT<br><span style="color: #05610b;">EN LÆSEKREDS</span></h1> 
+    <h1>KORT MEN GODT<br><span style="color: #05610b;">LÆSEKREDS</span></h1> 
       <p>
-        Har du lyst til at læse dansk litteratur – men ikke tid til en hel roman hver måned?<br>
-        Vi læser korte, men stærke tekster: noveller, essays og kortprosa fra moderne danske forfattere.<br>
-        Læsekredsen er for dig, der har travlt – og for dig, der taler dansk som andetsprog.<br>
+        Har du lyst til at læse dansk litteratur – men ikke tid til en hel roman hver måned?<br><br>
+        Vi læser korte, men stærke tekster: noveller, essays og kortprosa fra moderne danske forfattere.<br><br>
+        Læsekredsen er for dig, der har travlt – og for dig, der taler dansk som andetsprog.<br><br>
         Vi mødes en gang om måneden til samtale og fællesskab.<br>
       </p>
-      <a href="#about" class="btn">Om os</a>
-      <a href="#calendar" class="btn">Se Kalender</a>
-      <a href="#contact" class="btn">Kontakt os</a>
+      <div class="button-group">
+        <a href="#about" class="btn">Om os</a>
+        <a href="#calendar" class="btn">Se Kalender</a>
+        <a href="#contact" class="btn">Kontakt os</a>
+      </div>
     </div>
     <div class="hero-image">
       <img src="images/cup.webp" alt="cup" />
