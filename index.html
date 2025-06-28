@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tid til Tekst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #111;
+    }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+
+    .text-content {
+      flex: 1;
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: #e63946;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.8rem 1.5rem;
+      border: 2px solid #e63946;
+      background: transparent;
+      color: #e63946;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #e63946;
+      color: white;
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 300px;
+      max-width: 300px;
+      padding-left: 2rem;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    .agenda {
+      background: #f8f8f8;
+      padding: 4rem 6%;
+      text-align: left;
+    }
+
+    .about {
+      background: white;
+      padding: 4rem 6%;
+      text-align: left;
+    }
+
+    .agenda h2 {
+      font-size: 2rem;
+      color: #e63946;
+      margin-bottom: 1rem;
+    }
+
+    .agenda p {
+      max-width: 800px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .agenda ul {
+      list-style-type: disc;
+      padding-left: 1.5em;
+    }
+    .agenda li {
+      color: #333;
+      position: relative;
+    }
+    .agenda li::marker {
+      color: #05610b;
+    }
+
+    /* .agenda li {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    } */
+/* 
+    .agenda li span {
+      color: #05610b;
+      font-weight: bold;
+    } */
+
+    .about h2 {
+      font-size: 2rem;
+      color: #e63946;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      max-width: 800px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .about ul {
+      list-style-type: disc;
+      padding-left: 1.5em;
+    }
+    .about li {
+      color: #333;
+      position: relative;
+    }
+    .about li::marker {
+      color: #05610b;
+    }
+
+    /* .about ul {
+      margin-top: 2rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .about li {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .about li span {
+      color: #e63946;
+      font-weight: bold;
+    } */
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-image {
+        padding: 0;
+        margin-top: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="container">
+    <div class="text-content">
+    <h1>KORT MEN GODT<br><span style="color: #05610b;">EN LÆSEKREDS</span></h1> 
+      <p>
+        Har du lyst til at læse dansk litteratur – men ikke tid til en hel roman hver måned?<br>
+        Vi læser korte, men stærke tekster: noveller, essays og kortprosa fra moderne danske forfattere.<br>
+        Læsekredsen er for dig, der har travlt – og for dig, der taler dansk som andetsprog.<br>
+        Vi mødes en gang om måneden til samtale og fællesskab.<br>
+      </p>
+      <a href="#about" class="btn">Om os</a>
+      <a href="#calendar" class="btn">Se Kalender</a>
+      <a href="#contact" class="btn">Kontakt os</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/cup.webp" alt="cup" />
+    </div>
+  </section>
+
+  <section class="agenda container" id="about">
+    <div class="text-content">
+    <h2>Om os</h2>
+    <p>Velkommen til en læsekreds for dig, der savner litteratur, men ikke har tid til at læse store romaner hver måned. <br><br>
+
+      Måske foretrækker du litteratur i korte, koncentrerede formater. <br>
+      Måske er du blevet færdig med sprogskolen og leder efter et sted at bruge dansk i praksis. <br>
+      Måske er du bare nysgerrig. <br>
+      <ul>
+        <li>Hvis du læser det, du er inviteret.</li>
+        <li>Vi bestemmer over teksterne på forhånd, så du kan læse dem i din egen tempo.</li>
+        <li>Vi læser korte tekster eller udvalgte kapitler fra en roman.</li>
+        <li>Du behøver ikke tale perfekt dansk.</li>
+      </ul>
+      Vi mødes én gang om måneden. Der er plads til alle – uanset sprogligt niveau eller litterær erfaring. Du er velkommen, præcis som du er.
+    </div>
+    <div class="hero-image">
+      <img src="images/sun.webp" alt="sunset" />
+    </div>
+  </section>
+
+  <section class="about container" id="calendar">
+    <div class="text-content">
+    <h2>Kalender</h2>
+    Programmet for efteråret 2025 er stadig under udvikling – vi finder form og indhold sammen undervejs.<br><br>
+
+    Planen er at mødes cirka én gang om måneden og læse korte, moderne danske tekster, der giver noget at tale om – essays, noveller, digte og måske enkelte romankapitler.<br><br>
+
+    Vi arbejder på at sammensætte en varieret og inspirerende læseliste. Det kunne for eksempel være tekster af:
+
+    <ul>
+      <li>Suzanne Brøgger</li>
+      <li>Dorthe Nors</li>
+      <li>Helle Helle</li>
+      <li>Naja Marie Aidt</li>
+      <li>Jonas Eika</li>
+      <li>...dit forslag</li>
+    </ul>
+
+    Sted og tidspunkter bliver meldt ud snarest. Har du forslag til tekster eller forfattere, er du meget velkommen til at byde ind.
+    </div>
+    <div class="hero-image">
+      <img src="images/woman.webp" alt="Person der læser eller skriver" />
+    </div>
+  </section>
+
+  <section class="agenda container" id="contact">
+  <div class="text-content">
+    <h2>Kontakt os</h2>
+    <p>Vil du stille spørgsmål eller foreslå en bog?<br>
+    Skriv til os – vi glæder os til at høre fra dig.</p>
+
+    <a href="mailto:laesekredskortmengodt@gmail.com" class="btn">Skriv en e-mail</a>
+  </div>
+  <div class="hero-image">
+    <img src="images/bird.webp" alt="Kontakt" />
+  </div>
+</section>
+
+</body>
+
+<footer style="text-align: center; padding: 2rem 1rem; background-color: #f0f0f0; color: #666; font-size: 0.9rem;">
+  Lavet af Svetlana Kutuzova og ChatGPT
+</footer>
+
+</html>
